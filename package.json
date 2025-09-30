@@ -1,0 +1,52 @@
+{
+  "name": "test-runner",
+  "version": "1.0.0",
+  "description": "Aplicación de escritorio para ejecutar tests unitarios y E2E",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "package:mac": "electron-builder build --mac",
+    "package:win": "electron-builder build --windows",
+    "package:linux": "electron-builder build --linux"
+  },
+  "keywords": [
+    "electron",
+    "testing",
+    "unit-tests",
+    "e2e",
+    "test-runner"
+  ],
+  "author": "Carlos Mur",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "fs-extra": "^11.3.2"
+  },
+  "devDependencies": {
+    "electron": "^38.1.2",
+    "electron-builder": "^26.0.12",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jsdoc": "^60.3.1",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2"
+  },
+  "build": {
+    "appId": "com.cmurestudillos.test-runner",
+    "productName": "Test Runner",
+    "directories": {
+      "output": "release/"
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "icon": "src/assets/icon.icns"
+    },
+    "win": {
+      "icon": "src/assets/icon.ico"
+    },
+    "linux": {
+      "icon": "src/assets/icon.png",
+      "category": "Development"
+    }
+  }
+}

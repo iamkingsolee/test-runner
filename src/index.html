@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Runner - Ejecutor de Tests</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header -->
+      <header class="app-header">
+        <h1>🧪 Test Runner</h1>
+        <div class="header-controls">
+          <button id="selectProjectBtn" class="btn btn-primary">📁 Seleccionar Proyecto</button>
+          <button id="watchToggleBtn" class="btn btn-secondary" disabled>👁️ Activar Watch Mode</button>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="project-info">
+            <h3>Proyecto</h3>
+            <div id="projectPath" class="project-path">Ningún proyecto seleccionado</div>
+          </div>
+
+          <div class="test-explorer">
+            <h3>Explorador de Tests</h3>
+            <div class="test-filters">
+              <label> <input type="checkbox" id="showUnit" checked /> Unitarios </label>
+              <label> <input type="checkbox" id="showE2E" checked /> E2E </label>
+              <label> <input type="checkbox" id="showIntegration" checked /> Integración </label>
+            </div>
+            <div id="testTree" class="test-tree">
+              <!-- Test files tree will be rendered here -->
+            </div>
+          </div>
+        </aside>
+
+        <!-- Content Area -->
+        <main class="content-area">
+          <!-- Test Results Panel -->
+          <div class="results-panel">
+            <div class="panel-header">
+              <h3>Resultados de Tests</h3>
+              <div class="test-stats">
+                <span class="stat passed" id="passedCount">✅ 0</span>
+                <span class="stat failed" id="failedCount">❌ 0</span>
+                <span class="stat running" id="runningCount">⏳ 0</span>
+              </div>
+            </div>
+
+            <div class="results-content">
+              <div id="noResults" class="no-results">
+                <p>Selecciona un test para ver los resultados</p>
+              </div>
+
+              <div id="testResults" class="test-results" style="display: none">
+                <!-- Test results will be displayed here -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Console Output -->
+          <div class="console-panel">
+            <div class="panel-header">
+              <h3>Consola</h3>
+              <button id="clearConsoleBtn" class="btn btn-small">🗑️ Limpiar</button>
+            </div>
+            <div id="consoleOutput" class="console-output">
+              <div class="console-line info">
+                <span class="timestamp">[Info]</span>
+                <span class="message">Test Runner iniciado - Selecciona un proyecto para comenzar</span>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <!-- Status Bar -->
+      <footer class="status-bar">
+        <div class="status-left">
+          <span id="statusText">Listo</span>
+        </div>
+        <div class="status-right">
+          <span id="watchStatus">Watch: Inactivo</span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay" style="display: none">
+      <div class="loading-content">
+        <div class="spinner"></div>
+        <p>Cargando proyecto...</p>
+      </div>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
